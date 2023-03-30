@@ -1,0 +1,25 @@
+
+CREATE TABLE Funcionarios (
+  ID INT PRIMARY KEY,
+  Nome VARCHAR(50),
+  Sobrenome VARCHAR(50),
+  Data_Nascimento DATE,
+  Email VARCHAR(50),
+  Cargo VARCHAR(50),
+  Salário DECIMAL(10),
+  Departamento VARCHAR(50),
+  Data_Admissão DATE,
+  Supervisor_Imediato VARCHAR (50),
+Nível_de_acesso_ao_sistema VARCHAR (50),
+Data_de_saída DATE
+);
+
+INSERT INTO Funcionarios VALUES
+(ID, Nome, Sobrenome, Data_Nascimento, Email, Cargo, Salário, Departamento, Data_Admissão, Supervisor_Imediato, Nível_de_acesso_ao_sistema, Data_de_saída),
+(01, 'Miguel', 'Monteiro', 1999-03-03, 'MiguelMonteiro@gmail.com', 'Analista de banco de dados', '7.000', 'Departamento Pó de Sol', 2012-04-13, 13,'funcionário', '-'),
+(02, 'Hanna', 'Elegante', 1999-01-13, 'HannaElegante333@gmail.com', 'Membro do RH', '7.500', 'Departamento Pó de Sol', 2009-11-12, 13, 'funcionário','-'),
+(03, 'Heloise', 'Bertrand', 2002-07-23, 'HeloiseBertrand@gmail.com', 'Membro do RH', '7.500', 'Departamento Pó de Sol', 2010-06-21, 13, 'funcionário','-'),
+(04, 'Lewis', 'Sheeran', 1993-05-09, 'LewisSheeran@gmail.com', 'Analista de banco de dados', '10.000', 'Departamento Pó de Sol', 2012-04-13, 13, 'funcionário','-'),
+(05, 'Rony', 'Monteiro', 1983-01-10, 'RonyRony789@gmail.com', 'Analista de banco de dados', '10.000', 'Departamento Pó de Sol', 2012-04-13, 13, 'funcionário','-');
+
+SELECT * FROM Funcionarios where NOME
